@@ -1,0 +1,177 @@
+// @media only screen and (max-width : 1920px) {
+//    /* CSS правила */
+// }
+
+// @media only screen and (max-width : 1680px) {}
+
+// @media only screen and (max-width : 1366px) {}
+
+// @media only screen and (max-width : 1280px) {}
+
+// @media only screen and (max-width : 1024px) {}
+
+// @media only screen and (max-width : 800px) {}
+
+// @media only screen and (max-width : 768px) {}
+
+// @media only screen and (max-width : 600px) {}
+
+// @media only screen and (max-width : 533px) {}
+
+// @media only screen and (max-width : 360px) {}
+
+// @media only screen and (max-width : 320px) {}
+
+// @media only screen and (max-width : 240px) {}
+
+// @media only screen and (max-width : 176px) {}
+
+
+
+@media (max-width : 900px) {
+   #wrapper .container .sidebar .skills {
+
+      &__html,
+      &__css,
+      &__scss {
+         padding:0px;
+         ul li {
+            margin: 1px;
+         }
+
+      }
+   }
+
+}
+
+@media only screen and (max-width : 768px) {
+
+   #wrapper .container .header .shadow img{
+      width:250px;
+      height: 250px;
+   }
+
+   #wrapper .container .sidebar .language{
+      display:flex;
+      flex-direction: column;
+      
+      &__html-css,&__javascript,&__react-redux {
+         margin-bottom: 15px;
+      }
+
+   }
+
+   #wrapper .container .sidebar .contacts{
+      &__name,
+      &__phone-number,
+      &__email,
+      &__country{
+         grid-template-columns: 1fr 3fr;
+      }
+   }
+
+   #wrapper .container .content__heading .text-about-me,
+   #wrapper .container .content__education .shoter-education .text-education,
+   #wrapper .container .content .content__expirience .shoter-expirience .text-expirience{
+      font-size: 30px;
+   }
+
+}
+
+@media (max-width : 630px) {
+
+   #wrapper .container{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+         'header'
+         'sidebar'
+         'content';
+
+
+         .header {
+            grid-area: header;
+            width: 100%;
+            height: 480px;
+            background: #656565;
+   
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            clip-path: none;
+            
+            .shadow{
+               display: flex;
+               justify-content: center;
+               clip-path: none;
+               background: none;
+               img {
+               width: 200px;
+               height: 200px;
+               border-radius: 50%;
+            }
+
+            }
+            
+            .profile-info {
+
+               padding: 50px;
+               text-align: justify;
+               display: flex;
+               flex-direction: column;
+               justify-content: start;
+               align-items: start;
+   
+               &__user-name {
+                  padding: 10px;
+                  text-transform: uppercase;
+                  font-size: 40px;
+                  color: #ffffff;
+               }
+   
+               &__specialty {
+                  padding: 10px;
+                  text-transform: uppercase;
+                  color: #d1d2d4;
+                  font-size: 20px;
+               }
+   
+               &__status {
+                  padding: 10px;
+                  color: #f6f6f6;
+                  font-size: 20px;
+                  text-indent: 20px;
+               }
+            }
+   
+         }
+   }
+
+
+
+
+   #wrapper .container .sidebar .language{
+      display:flex;
+      flex-direction: row;
+      
+      &__html-css,&__javascript,&__react-redux {
+         margin-bottom: 0ж
+      }
+
+   }
+   #wrapper .container .sidebar .skills {
+
+      display: none;
+      
+   }
+
+   #wrapper .container .sidebar .contacts{
+      &__name,
+      &__phone-number,
+      &__email,
+      &__country{
+         grid-template-columns: 1fr 1fr;
+      }
+   }
+}
